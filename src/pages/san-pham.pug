@@ -1,0 +1,12 @@
+extends ../_components/_layout/_layout.pug
+
+block var
+	- let title = 'SẢN PHẨM';
+	- let bodyClass = 'index-page';
+	- let titlePosition = ['san Pham'];
+block banner,breadcrumb
+	include ../_components/banner/homebanner.pug
+block main
+	include ../_components/san-pham/sp-1.pug
+	
+block scripts

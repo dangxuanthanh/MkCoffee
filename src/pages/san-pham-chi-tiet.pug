@@ -1,0 +1,12 @@
+extends ../_components/_layout/_layout.pug
+
+block var
+	- let title = 'CHI TIẾT SẢN PHẨM';
+	- let bodyClass = 'index-page';
+	- let titlePosition = ['Chi tiet San Pham'];
+block banner,breadcrumb
+	include ../_components/banner/homebanner.pug
+block main
+	include ../_components/san-pham-chi-tiet/spct.pug
+	
+block scripts

@@ -1,0 +1,39 @@
+.container
+	.title Hỗ trợ khách hàng
+section.htkh
+	.container
+		.row
+			.col-lg-8.col-sm-8
+				- for (i=1; i<=10; i++)
+					.mb-1
+						button.collapsible 01. Phương thức thanh toán khi mua hàng tại MK Coffee như thế nào?
+						.content
+							p.mb-2 Để mua hàng tại MK Coffee, quý khách có thể lựa chọn một trong các hình thức sau:
+								br
+								| Cách 1: Thanh toán bằng dịch vụ giao hàng nhận tiền (COD)
+								br
+								| Cách 2: Thanh toán thông qua Ngân hàng (Chuyển khoản, ATM, Internet Banking…)
+								br
+								| Cách 3: Thanh toán khi mua hàng trực tiếp từ MK Coffee
+				.pagination.mt-5
+					button.pag.active 1
+					button.pag 2
+					button.pag 3
+			.col-lg-4.col-sm-4
+				img.img_new(src="assets/tin-tuc/htkh.jpg", alt="")
+
+		.tab_content Tầm nhìn - Sứ mệnh
+		.row
+			.col-lg-8.mt-4
+				.row
+					.col-lg-6
+						input.form_full(type='text' placeholder="Họ và tên")
+					.col-lg-6
+						input.form_full(type='text' placeholder="Email")
+					.col-lg-6
+						input.form_full(type='text' placeholder="Số điện thoại")
+					.col-lg-6
+						input.form_full(type='text' placeholder="Địa chỉ")
+					.col-lg-12
+						textarea.form_full(rows="4" placeholder="Nội dung đặt câu hỏi")
+						button.submit(type="submit") GỬI

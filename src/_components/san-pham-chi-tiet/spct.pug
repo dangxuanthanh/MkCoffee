@@ -1,0 +1,56 @@
+.spct
+	.container
+		.row
+			.col-lg-1
+			.col-lg-6
+				.swiper-container.gallery-top
+					.swiper-wrapper
+						- for (i=1; i<=6; i++)
+							.swiper-slide
+								img(src="assets/san-pham/spct-1.jpg" alt="")
+				.swiper-container.gallery-thumbs
+					.swiper-wrapper
+						- for (i=1; i<=4; i++)
+							.swiper-slide
+								img.thumbnail(src="assets/san-pham/spct-1.jpg" alt="")
+			.col-lg-4
+				.name_product Cà phê hạt Arabica – 250g
+				ul.infor
+					li <span>Thành phần:</span> 100% cà phê Arabica nguyên chất.
+					li <span>Chỉ tiêu chất lượng:</span> Caffeine ≥ 1%; Độ ẩm ≤ 5%.
+					li <span>Bảo quản:</span> nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp
+					li <span>Khuyến nghị:</span> sử dụng trong vòng 30 ngày sau khi mở bao.
+					li <span>Chứng nhận ATVSTP từ BQL An toàn thực phẩm TPHCM</span>
+				p.bold.product_monopoly Sản phẩm được sản xuất và phân phối độc quyền thương hiệu MK Coffee
+				button.submit(type="submit") LIÊN HỆ
+		.row.mt-3
+			.col-lg-10.description
+				.detail_text
+					p.bold Tổng quan về cây cafe Arabica:
+					ul
+						li Cây cafe Arabica ưa sống ở vùng núi cao, chủ yếu là tại khu vực Lâm Đồng. Đây là nguyên liệu chính của các hãng, các thương hiệu cà phê nổi tiếng trên thế giới
+					p.bold Đặc điểm cây cafe Arabica:
+					ul
+						li Cây cafe trưởng thành cao từ 4 – 6m, có thể cao đến 15m nến để mọc hoang dã
+						li Cây có tán nhỏ, màu xanh đậm, lá hình ovan
+						li Quả hình bầu dục hơi méo, mỗi quả chứa hai hạt cafe
+						li Thu hoạch hạt khi đã trưởng thành để đạt chất lượng tốt nhất
+					p.bold Đặc trưng hạt cafe Arabica:
+					ul
+						li Hạt Arabica giống hạt Moka, có vị thanh chua xen lẫn vị đắng nhẹ, hậu thoáng ngọt, thơm nhiều, màu nước nâu nhạt, thích hợp cho các dòng café pha máy. Có thể kết hợp với hạt Robusta
+						li Mùi hương của hạt Arabica rất thanh tao, quý phái. Thông thường, hạt Arabica có mùi của hoa trái, hòa quyện với mùi của mật ong, và cả mùi của cánh đồng rơm buổi trưa hè
+						li Cafeine khoảng 1,6%, thường phổ biến là chế biến ướt (giá thành cao hơn chế biến khô)
+		.row.products
+			.col-lg
+				.product_content.pb-3 Sản phẩm khác
+				.swiper-container
+					.swiper-wrapper
+						- for (i=1; i<=6; i++)
+							.swiper-slide
+								a(href="san-pham-chi-tiet.html")
+									img(src="assets/san-pham/sp-1.jpg" alt="")
+								.readmore
+									p Eros 250g
+									a(href="san-pham-chi-tiet.html") Xem thêm
+				.swiper-button-next <span class="lnr lnr-arrow-right"></span>
+				.swiper-button-prev <span class="lnr lnr-arrow-left"></span>

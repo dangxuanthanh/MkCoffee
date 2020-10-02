@@ -1,0 +1,54 @@
+.htkh
+	.collapsible
+		background-color: #f5f5f5
+		color: #333333
+		cursor: pointer
+		padding: 15px
+		width: 100%
+		border: none
+		text-align: left
+		outline: none
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 15px
+		font-family: "Mulish-SemiBold"
+	.active
+		color: #cea31a
+		border-bottom: 1px solid #cea31a
+		&::after
+			color: #fff
+		
+
+	.collapsible
+		&:hover
+			color: #cea31a
+		&:hover:after
+			color: #cea31a
+
+		&:after
+			content: '\f078'
+			font-family: 'Font Awesome\ 5 Free'
+			color: #aaaaaa
+			font-weight: bold
+			float: right
+			margin-left: 5px
+
+
+	.active:after
+		content: "\f077"
+		color: #cea31a
+	.tab_content
+		font-size: 18px
+		@media screen and ( max-width: 576px )
+			margin-top: 50px
+	.content
+		padding: 0 18px
+		max-height: 0
+		overflow: hidden
+		transition: max-height 0.2s ease-out
+		background-color: #f1f1f1
+		font-size: 14px
+		p 
+			padding: 20px 0
+			font-family: "Mulish-SemiBold"

@@ -1,0 +1,24 @@
+{
+	"font": [
+		"src/fonts/**"
+	],
+	"js": [
+		"bower_components/jquery/dist/jquery.min.js",
+		"bower_components/bootstrap/dist/js/bootstrap.min.js",
+		"bower_components/swiper/dist/js/swiper.min.js",
+		"bower_components/fancybox/dist/jquery.fancybox.min.js",
+		"bower_components/aos/dist/aos.js",
+		"bower_components/paginationjs/dist/pagination.min.js",
+		"bower_components/fullpage.js/dist/fullpage.js",
+		"bower_components/fullpage.js/vendors/easings.min.js",
+		"bower_components/fullpage.js/vendors/scrolloverflow.min.js"
+	],
+	"css": [
+		"bower_components/bootstrap/dist/css/bootstrap.min.css",
+		"bower_components/swiper/dist/css/swiper.min.css",
+		"bower_components/fancybox/dist/jquery.fancybox.min.css",
+		"bower_components/aos/dist/aos.css",
+		"bower_components/paginationjs/dist/pagination.css",
+		"bower_components/fullpage.js/dist/fullpage.css"
+	]
+}

@@ -1,0 +1,158 @@
+header
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 10
+	background-color: #031320
+
+	.menu
+		ul
+			display: flex
+			flex-wrap: wrap
+			height: 65px
+			list-style: none
+			justify-content: flex-end
+			align-items: center
+			margin: 0
+			li
+				margin-left: 30px
+				a
+					color: #ffffff
+					font-size: 19px
+					text-decoration: none
+					&:hover
+						color: #cea31a
+			.search-box
+				width: 20%
+				overflow: hidden
+
+				.search-input
+					width: 100%
+					margin-left: 100%
+					transition: margin-left 0.3s ease
+					background: transparent
+					border: 0
+					padding: 8px 0
+					color: #fff
+					border-bottom: 2px solid #fff
+					&::placeholder
+						color: #999
+				.search-input.show 
+					margin-left: 0px
+			.search-icon
+				text-align: center
+				font-size: 22px
+				color: #fff
+				cursor: pointer
+				&:hover
+					color: #cea31a
+			.search-icon.click
+				i:before
+					content: '\'
+.sidebar
+	position: fixed
+	display: flex
+	height: 100%
+	top: 0
+	left: -500px
+	z-index: 10
+	border-right: 1px solid #cea31a
+	transition: left 0.4s ease
+
+	.leftbar
+		width: 500px
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: #031320
+
+		.menu
+			width: 350px
+			li 
+				padding: 5px 0
+				font-size: 20px
+				text-transform: uppercase
+				list-style: none
+
+				a 
+					color: #cea31a
+					text-decoration: none
+			.icon
+				border-top: 1px dashed #cea31a
+				margin-top: 20px
+				padding-top: 20px
+				i 
+					font-size: 12px
+			.active, a:hover 
+				color: #fff
+
+	.rightbar
+		position: relative
+		background-color: #031320
+		width: 80px
+		transition: 0.2s ease
+		img
+			margin-top: 65px		
+		.btn
+			position: absolute
+			bottom: 3%
+			left: 0px
+			width: 100%
+			padding: 0
+			transition: left 0.4s ease
+			text-align: center !important
+			.icon
+				width: 70%
+				margin: 0 auto
+				height: 30px
+				border-top: 1px solid #cea31a
+				border-bottom: 1px solid #cea31a
+				&:hover
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+				&:hover::before
+					background-color: #fff
+				&::before
+					content: ''
+					width: 70%
+					display: block
+					height: 1px
+					top: 50%
+					position: relative
+					background-color: #cea31a
+			span
+				color: #cea31a
+				display: none
+				font-size: 50px
+				padding: 0
+				&:hover
+					color: #fff
+
+		.btn.click
+			padding: 0
+			span
+				display: block
+			.icon
+				display: none
+
+.sidebar.show 
+	left: 0px
+	border-right: 0
+	.rightbar
+		border-left: 1px solid #cea31a
+		background-color: rgba(0,0,0,0.6)
+
+
+.overlay
+	position: fixed
+	display: none
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,0.7)
+	z-index: 9
+	transition: .5s ease !important
+.overlay.block
+	display: block

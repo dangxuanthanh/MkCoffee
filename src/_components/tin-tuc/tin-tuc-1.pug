@@ -1,0 +1,37 @@
+.container
+	.title Tin tức - sự kiện
+section
+	.container
+		.tab
+			.row
+				.col-lg-6.col-sm-6.col-xs-6
+					.tab-1
+						a(href="").active TIN THỊ TRƯỜNG
+				.col-lg-6.col-sm-6.col-xs-6
+					.tab-2
+						a(href="") TIN THỊ TRƯỜNG
+
+section
+	.container
+		.row
+			- for(i=1; i<=2;i++)
+				.col-lg-6.mb-10
+					.img_new
+						a(href="tin-tuc-chi-tiet.html")
+							img(src="assets/tin-tuc/tt-1.jpg", alt="")
+						.title_new
+							.date 23.06.2020
+							a(href="tin-tuc-chi-tiet.html").text_new 4 thời điểm tốt nhất trong ngày để uống cà phê
+		.row.news
+			.col-lg
+				.swiper-container
+					.swiper-wrapper
+						- for (i=1; i<=5; i++)
+							.swiper-slide
+								.img_new
+									a(href="tin-tuc-chi-tiet.html")
+										img(src="assets/tin-tuc/tt-1.jpg", alt="")
+									.title_new
+										.date 23.06.2020
+										a(href="tin-tuc-chi-tiet.html").text_new 4 thời điểm tốt nhất trong ngày để uống cà phê
+					.swiper-pagination

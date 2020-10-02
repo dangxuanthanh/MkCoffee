@@ -1,0 +1,12 @@
+extends ../_components/_layout/_layout.pug
+
+block var
+	- let title = 'NĂNG LỰC SẢN XUẤT';
+	- let bodyClass = 'index-page';
+	- let titlePosition = ['Nang Luc San Xuat'];
+block banner,breadcrumb
+	include ../_components/banner/homebanner.pug
+block main
+	include ../_components/nang-luc-san-xuat/nlsx-1.pug
+	
+block scripts

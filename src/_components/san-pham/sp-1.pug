@@ -1,0 +1,17 @@
+.container
+	.title Sản phẩm
+section
+	.container
+		.row
+			- for (i=1; i<=6; i++)
+				.col-lg-4.col-sm-6.col-xs-6.img_sp
+					a(href="san-pham-chi-tiet.html")
+						img(src="assets/san-pham/sp-1.jpg", alt="")
+					.readmore
+						p Eros 250g
+						a(href="san-pham-chi-tiet.html") Xem thêm
+							
+		.pagination
+			button.pag.active 1
+			button.pag 2
+			button.pag 3
